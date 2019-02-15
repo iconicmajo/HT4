@@ -1,0 +1,26 @@
+/**
+ * Interfaz Ipila 
+ * HT4
+ * Javier Salazar 18764
+ * Rodolfo Alonso 17470
+ * Majo Castro 181202
+ */
+
+/**
+ * @author Majo!
+ *
+ */
+public interface iPila<E>
+{
+    
+    public void push(E item);
+    
+    public E pop();
+    
+    public E peek();
+    
+    public boolean empty();
+    
+    public int size();
+}
+    
