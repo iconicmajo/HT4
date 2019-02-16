@@ -5,7 +5,7 @@
  * @author Majo!
  * @param <E> tipo de datos que la clase recibe como parametro 
  */
-package Interfaces;
+
 
 
 public interface iPila<E>

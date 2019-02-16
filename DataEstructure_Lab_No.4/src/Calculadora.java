@@ -1,15 +1,25 @@
 /**
+ * Extraido del trabajo  HT2 de: 
  * Estructura de datos
  * Gerardo Mendez 18239
  * Ma. Jose Castro 181202
  * @author Majo!
  */
+
+/**
+ * Interfaz Ipila
+ * HT4
+ * Javier Salazar 18764
+ * Rodolfo Alonso 17470
+ * Majo Castro 181202
+ */
+
 /**
  * @author Majo!
  *
  */
 
-package Calculadora;
+
 
 import Interfaces.iCalculadora;
 

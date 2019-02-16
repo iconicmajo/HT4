@@ -24,7 +24,8 @@ public class Principal {
      */
     public static void main(String[] args) throws IOException {
          iPila<String> pila = new Pila<>();
-          iCalculadora calculadora = new Calculadora();
+         iCalculadora calculadora = new Calculadora();
+        // iLista<String> lista = new Lista<>();
         ArrayList<String> array = new ArrayList<>();
 
         Scanner read = new Scanner(new File("doc.txt"));

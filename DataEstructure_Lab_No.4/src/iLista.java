@@ -11,7 +11,7 @@
  *
  */
 
-package Interfaces;
+
 
 
     public interface iLista<E>

@@ -7,7 +7,7 @@
  */
 
 
-package Factory;
+
 
 public class FactoryImplements<E>{
 
