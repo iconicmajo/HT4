@@ -23,9 +23,9 @@ public class Principal {
      * @throws IOException
      */
     public static void main(String[] args) throws IOException {
-        // iPila<String> pila = new Pila<>();
-        //  iCalculadora calculadora = new Calculadora();
-        //ArrayList<String> array = new ArrayList<>();
+         iPila<String> pila = new Pila<>();
+          iCalculadora calculadora = new Calculadora();
+        ArrayList<String> array = new ArrayList<>();
 
         Scanner read = new Scanner(new File("doc.txt"));
         read.useDelimiter(" ");
@@ -52,6 +52,7 @@ public class Principal {
             if (op == 2) {
                 //De una se cambia al vector de la HT2
                 System.out.println("Implements vector");
+                //calculadora.
 
             }
             if(op == 3) {
@@ -63,7 +64,7 @@ public class Principal {
                 read.nextLine();
             }
 
-       /* catch(NumberFormatException e){
+        catch(NumberFormatException e){
             System.out.println("");
             System.out.println("Hay dos simbolos juntos o dos numeros juntos (ademas de los primeros dos) en el archivo de texto ingresado");
             System.out.println("Por favor corregir para que el programa pueda realizar los calculos deseados");
@@ -82,7 +83,7 @@ public class Principal {
             System.out.println("El archivo de texto incluye simbolos que no corresponden a operaciones matematicas");
             System.out.println("Por favor corregir para que el programa pueda realizar los calculos deseados");
             System.out.println("");
-        }*/
+        }
         }
     }
 

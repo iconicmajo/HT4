@@ -24,16 +24,23 @@ public class Calculadora implements iCalculadora
     }
 
     /* (non-Javadoc)
-     * @see iCalculadora#sumar(double, double)
+     * @see Esta es la implementación singleton donde unicamente se instancia una vez, de lo contrario muestra
+     * un mensaje donde indica que ya hay uno existente
      */
 
     public static Calculadora getCalculatorInstance(){
         if (cal==null){
             cal =new Calculadora();
         }
+        else {
+        	System.out.println("No se puede crear el objeto calculadora, porque ya hay uno existente");
+        }
         return cal;
     }
 
+    /* (non-Javadoc)
+     * @see iCalculadora#sumar(double, double)
+     */
     public double sumar(double n1, double n2){
         double resultado;
         resultado = n1 + n2;
@@ -65,6 +72,20 @@ public class Calculadora implements iCalculadora
         double resultado;
         resultado = n1 / n2;
         return resultado;
+    }
+    /* (non-Javadoc)
+     * @see 
+     * Esto evita que en algun momento sea clonada la instancia 
+     */
+    public Calculadora clone() {
+    	try {
+    		trow new CloeNotSupportedException();
+    		
+    	}
+    	catch (cloneNotSupportedException ex) {
+    		System.out.println("No se puede clonar un objeto calculadora");
+    	}
+    	retunr null;
     }
 
 }
