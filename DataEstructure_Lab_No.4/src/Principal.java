@@ -24,8 +24,8 @@ public class Principal {
      */
     public static void main(String[] args) throws IOException {
          iPila<String> pila = new Pila<>();
-         iCalculadora calculadora = new Calculadora();
-         iLista<String> lista = new Lista<>();
+         //iCalculadora calculadora = new Calculadora();
+        // iLista<String> lista = new Lista<>();
          ArrayList<String> array = new ArrayList<>();
 
         Scanner read = new Scanner(new File("doc.txt"));
@@ -64,27 +64,6 @@ public class Principal {
                 opLista = read.nextInt();
                 read.nextLine();
             }
-
-        catch(NumberFormatException e){
-            System.out.println("");
-            System.out.println("Hay dos simbolos juntos o dos numeros juntos (ademas de los primeros dos) en el archivo de texto ingresado");
-            System.out.println("Por favor corregir para que el programa pueda realizar los calculos deseados");
-            System.out.println("");
-            //System.out.println("El archivo de texto que se utilizo no cumple con las condiciones");
-        }
-        catch(ArrayIndexOutOfBoundsException e){
-            System.out.println("");
-            System.out.println("El archivo de texto utilizado para el programa no termina en un simbolo de operacion");
-            System.out.println("Por favor corregir para que el programa pueda realizar los calculos deseados");
-            System.out.println("");
-        }
-        catch(IllegalArgumentException e)
-        {
-            System.out.println("");
-            System.out.println("El archivo de texto incluye simbolos que no corresponden a operaciones matematicas");
-            System.out.println("Por favor corregir para que el programa pueda realizar los calculos deseados");
-            System.out.println("");
-        }
         }
     }
 

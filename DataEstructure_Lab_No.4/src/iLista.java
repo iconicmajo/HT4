@@ -11,9 +11,6 @@
  *
  */
 
-
-
-
     public interface iLista<E>
     {
         public int size();

@@ -8,7 +8,7 @@ package ArrayList;
  * Majo Castro 181202
  */
 
-import Interfaces.iLista;
+
 
 public abstract class FactoryList<E> implements iLista<E> {
 	
